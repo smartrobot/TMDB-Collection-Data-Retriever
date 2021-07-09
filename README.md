@@ -32,14 +32,16 @@ Additionally you can:
 
 ### Step 2 Install requirements
 
-Install pipenv:
-https://pipenv.pypa.io/en/latest/
+1.  **Install pipenv**:
+[pipenv](https://pipenv.pypa.io/en/latest/)
 
-Install depencencies:
-pipenv install
+2. **Install depencencies**:
+`pipenv install`
 
-run:
-pipenv run python collection_updater.py
+3.  **run**:
+`pipenv run python collection_updater.py`
+or
+`bash run_vdev.sh`
 
 ## Requirements
 
