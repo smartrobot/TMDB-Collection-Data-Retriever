@@ -37,20 +37,20 @@ Additionally you can:
 
 1.  **Install pipenv**:
 
-[pipenv](https://pipenv.pypa.io/en/latest/)
+- [pipenv](https://pipenv.pypa.io/en/latest/)
 
-2. **Install depencencies**:
+2. **Install dependencies**:
 
-`pipenv install`
+- `pipenv install`
 
 
 3.  **run**:
 
-`pipenv run python collection_updater.py`
+- `pipenv run python collection_updater.py`
 
-or
+   or
 
-`bash run_vdev.sh`
+- `bash run_vdev.sh`
 
 ## Requirements
 
