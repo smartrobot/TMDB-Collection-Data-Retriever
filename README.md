@@ -3,8 +3,11 @@
 This script collects metadata (summary and images) for your plex collection that were created based on TheMovieDB.
 
 Changes:
-  Fixed type miss match bug
-  added automation support in settings ini this allows the script to be used with tautilli
+
+  - Fixed type miss match bug
+
+  - Added automation support in settings ini this allows the 
+  script to be used with tautilli
 
 **How does it work?**
 
@@ -33,14 +36,20 @@ Additionally you can:
 ### Step 2 Install requirements
 
 1.  **Install pipenv**:
+
 [pipenv](https://pipenv.pypa.io/en/latest/)
 
 2. **Install depencencies**:
+
 `pipenv install`
 
+
 3.  **run**:
+
 `pipenv run python collection_updater.py`
+
 or
+
 `bash run_vdev.sh`
 
 ## Requirements
