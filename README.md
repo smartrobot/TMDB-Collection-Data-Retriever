@@ -32,18 +32,14 @@ Additionally you can:
 
 ### Step 2 Install requirements
 
-The following additional python libraries are used
+Install pipenv:
+https://pipenv.pypa.io/en/latest/
 
-requests (https://pypi.python.org/pypi/requests/2.18.4)
-plexapi (https://pypi.python.org/pypi/PlexAPI/3.0.6)
-progress (https://pypi.python.org/pypi/progress)
+Install depencencies:
+pipenv install
 
-### MacOS Specific 
-
-Install required libararies 
-  sudo pip3 install progress plexapi requests
-Execute
-  python3 collection_updater.py
+run:
+pipenv run python collection_updater.py
 
 ## Requirements
 
