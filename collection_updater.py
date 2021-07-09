@@ -30,6 +30,9 @@ else:
 PLEX_SERVER = config['plex_url']
 PLEX_TOKEN = config['plex_token']
 
+#Automation settings
+libraries = config['libraries']
+
 # Metadata settings
 PREF_LOCAL_ART = config['prefer_local_art']
 
@@ -96,10 +99,13 @@ def main():
         print('Could not find any movie libraries.')
         return
 
-    input_sections = input('\r\nEnter a whitespace separated list of library IDs to work on (e.g: 3 5 8 13):\r\n')
- 
+    input_sections = libraries
+
+    if libraries == "None":
+        input_sections = input('\r\nEnter a whitespace separated list of library IDs to work on (e.g: 3 5 8 13):\r\n')
+    
     # remove invalid characters from user input
-    input_sections = ''.join(i for i in input_sections if i.isdigit() or i.isspace()).split()
+    input_sections = map(int,''.join(i for i in input_sections if i.isdigit() or i.isspace()).split())
     
     for section_id in input_sections:
         

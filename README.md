@@ -1,6 +1,10 @@
-# TMDB Collection Data Retriever
+# This is a fork of TMDB Collection Data Retriever
 
 This script collects metadata (summary and images) for your plex collection that were created based on TheMovieDB.
+
+Changes:
+  Fixed type miss match bug
+  added automation support in settings ini this allows the script to be used with tautilli
 
 **How does it work?**
 
@@ -43,4 +47,4 @@ Execute
 
 ## Requirements
 
-Python (tested with 3.6.3)
+Python (tested with 3.9.5)
