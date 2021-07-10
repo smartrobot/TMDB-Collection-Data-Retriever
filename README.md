@@ -4,12 +4,11 @@ This script collects metadata (summary and images) for your plex collection that
 
 Changes:
 
-  - Fixed type miss match bug
+  - Fixed type miss match bug by forcing types on plexapi.id
 
   - Added automation support in settings ini this allows the 
   script to be used with tautilli
 
-  - Made workaround for osx
 
 **How does it work?**
 
