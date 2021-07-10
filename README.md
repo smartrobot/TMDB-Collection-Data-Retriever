@@ -9,6 +9,8 @@ Changes:
   - Added automation support in settings ini this allows the 
   script to be used with tautilli
 
+  - Made workaround for osx
+
 **How does it work?**
 
 The script collects all collections from your movie library that do not have a summary yet. It does this by looking the movies within the collection. The movies have a reference to the collection on TheMovieDB. If a valid collection reference can be found it will pull the summary as well as download posters/background images (and use the same web calls as if you were manually updating it over the web interface).

@@ -1,5 +1,6 @@
 import re
 import os
+import sys
 import requests
 import configparser
 import xml.etree.ElementTree as ET
@@ -105,7 +106,12 @@ def main():
         input_sections = input('\r\nEnter a whitespace separated list of library IDs to work on (e.g: 3 5 8 13):\r\n')
     
     # remove invalid characters from user input
-    input_sections = map(int,''.join(i for i in input_sections if i.isdigit() or i.isspace()).split())
+    #print(sys.platform)
+
+    if sys.platform == "darwin":
+        input_sections = ''.join(i for i in input_sections if i.isdigit() or i.isspace()).split()
+    else:
+        input_sections = map(int,''.join(i for i in input_sections if i.isdigit() or i.isspace()).split())
     
     for section_id in input_sections:
         
